@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script lang="JavaScript">
+
+    function tecla(){
+        window.alert("O código da tecla pressionada foi: " + event.keyCode);
+      }
+      
+      document.body.onkeypress = tecla;
+
+</script>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        text-align: center;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 20% 17%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    select{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.863);
+        color: white;
+        border-radius: 4px;
+        border: 1px solid grey;
+
+        width: 170px;
+        height: 38px;
+    }
+    #net{
+        margin-left: -96%;
+    }
+    #entrar{
+        background-color: red;
+        width: 100px;
+        height: 38px;
+        border-radius: 8PX;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-left: 10%;
+        font-size: 24px;
+        font-weight: 300;
+        color: white;
+        font-family: heavitas;
+    }
+    #lateral{
+        display: flex;
+    }
+    #inicio{
+        background-image: url(BR-pt-20240603-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: 100%;
+        fill-opacity: 0;
+        background-repeat: no-repeat;
+    }
+    
+
+</style>
+
+<body>
+    <section id="inicio">
+    <header>
+        <div id="net">
+            <img id="person" src="Netflix_Logo_PMS.png" width="210px">
+        </div>
+
+    <div id="lateral">
+            
+        <select>
+            <option value="">inglês</option>
+            <option value="">Portugues</option>
+            <option value="">espanhol</option>
+            <option value="">mandarim</option>
+            <option value="">russo</option>
+            <option value="">hebraico</option>
+            <option value="">latim</option>
+            <option value="">romano</option>
+            <option value="">alemão</option>
+            <option value="">carioca</option>
+        </select>
+        <div id="entrar">
+            <a> Entrar</a>
+        </div>
+    </div>
+    
+        
+    </header>
+</section>
+
+</body>
+</html>
